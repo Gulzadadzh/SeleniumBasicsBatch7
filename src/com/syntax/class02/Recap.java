@@ -9,14 +9,25 @@ public class Recap {
 		
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://facebook.com");
+		
+		
 		String title=driver.getTitle();
 		System.out.println(title);
-		if(title.equalsIgnoreCase("Facebook - Log In or Sing Up")) {
+		
+		if(title.equalsIgnoreCase("Facebook - Log In or Sign Up")){
+		
 			System.out.println("The title is Correct");
 		}else {
-			System.out.println("The title is WRONG");
+			System.out.println("The title is wrong");
+			
 		}
 		
+		
+		
+		
+		
 	}
+
+	
 
 }

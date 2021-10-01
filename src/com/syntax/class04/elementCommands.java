@@ -16,17 +16,15 @@ public class elementCommands {
 		WebDriver driver=new ChromeDriver();
 		driver.get(url);
 		String title=driver.getTitle();
-		WebElement ageRadioBtn=driver.findElement(By.xpath("//input[@value= '0-5']"));
-		boolean isEnabled = ageRadioBtn.isEnabled();
+		WebElement ageRadioBtn = driver.findElement(By.xpath("//input[@value = '0 - 5']"));
+		boolean isEnabled= ageRadioBtn.isEnabled();
 		boolean isDisplayed = ageRadioBtn.isDisplayed();
 		System.out.println(isEnabled);
 		System.out.println(isDisplayed);
-
-
-		System.out.println("Before clicking " + ageRadioBtn.isSelected());
-		ageRadioBtn.click();
-		Thread.sleep(2000);
-		System.out.println("After clicking " + ageRadioBtn.isSelected());
+		
+		
+		
+		
 	}
 
 }

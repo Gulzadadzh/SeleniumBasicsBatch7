@@ -12,11 +12,17 @@ public class usingXpath {
 		
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/default.aspx");
-		driver.findElement(By.xpath("//input[@type= 'text']")).sendKeys("Tester");
-		driver.findElement(By.xpath("//input[@id= 'ctl00_MainContent_password']")).sendKeys("test");
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		driver.findElement(By.xpath("//input [@type = 'text']")).sendKeys("Tester");
+		driver.findElement(By.xpath("//input [@id = 'ctl00_MainContent_password']")).sendKeys("test");
+		driver.findElement(By.xpath("//input [@value= 'Login']")).click();
+		
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[contains(text(), 'Log')]")).click();
+		
+		//driver.findElement(By.xpath("//a[contains(text(), 'Log')]")).click();
+		
+		
+		
+		
 		
 		
 	}

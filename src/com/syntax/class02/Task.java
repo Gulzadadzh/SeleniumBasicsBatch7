@@ -24,6 +24,9 @@ public class Task {
 		}else {
 			System.out.println("This is WRONG title");
 		}
+		Thread.sleep(3000);
+
+		driver.findElement(By.linkText("Logout")).click();
 		
 		
 		

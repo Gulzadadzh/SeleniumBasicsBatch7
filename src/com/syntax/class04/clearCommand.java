@@ -22,10 +22,10 @@ public class clearCommand {
 		Thread.sleep(2000);
 		WebElement loginButton = driver.findElement(By.className("button"));
 		loginButton.click();
-//		userNameTextBox.clear();
-//		passwordTextBox.clear();
+		//userNameTextBox.clear();
+		//passwordTextBox.clear();
 
-		WebElement logo = driver.findElement(By.xpath("//h1[text() = 'Web Orders']"));
+		WebElement logo = driver.findElement(By.xpath("//h1[text()= 'Web Orders']"));
 		if(logo.isDisplayed()) {
 			String logoText = logo.getText();
 			if(logoText.equals("Web Orders")) {
@@ -33,9 +33,13 @@ public class clearCommand {
 			} else {
 				System.out.println("This is the wrong logo");
 			}
+			
+			Thread.sleep(3000);
+			driver.close();
 		} 
 
 	}
+}
 
 
-	}
+	

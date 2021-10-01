@@ -11,14 +11,23 @@ public class LocatingElements {
 	
 	WebDriver driver=new ChromeDriver();
 	driver.get("http://facebook.com");
+	
 	driver.findElement(By.id("email")).sendKeys("syntax");
-	driver.findElement(By.name("pass")).sendKeys("syntax123");
-	driver.findElement(By.id("loginbutton")).click();
-	Thread.sleep(3000);
+	driver.findElement(By.name("pass")).sendKeys("123");
+	driver.findElement(By.name("login")).click();
+	Thread.sleep(3000);	
 	//driver.findElement(By.linkText("Forgot Password?")).click();
 	driver.findElement(By.partialLinkText("Forgot")).click();
-	Thread.sleep(2000);
+	Thread.sleep(2000);	
 	driver.quit();
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	}
