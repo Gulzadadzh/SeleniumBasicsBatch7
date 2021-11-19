@@ -9,33 +9,30 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HandleWindows {
-	
-	public static String url="http://accaunts.google.com/singup";
-	
+
+	public static String url = "http://accaunts.google.com/singup";
+
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-		
+
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
-		String mainPageHandle=driver.getWindowHandle();
+		String mainPageHandle = driver.getWindowHandle();
 		System.out.println(mainPageHandle);
-		WebElement helpLink=driver.findElement(By.linkText("Help"));
+		WebElement helpLink = driver.findElement(By.linkText("Help"));
 		helpLink.click();
-		
-		Set<String> allWindowHandles= driver.getWindowHandles();
+
+		Set<String> allWindowHandles = driver.getWindowHandles();
 		System.out.println(allWindowHandles.size());
-		Iterator<String> it=allWindowHandles.iterator();
-		mainPageHandle=it.next();
-		String childHandle=it.next();
+		Iterator<String> it = allWindowHandles.iterator();
+		mainPageHandle = it.next();
+		String childHandle = it.next();
 		System.out.println(childHandle);
 		Thread.sleep(2000);
 		driver.switchTo().window(mainPageHandle);
-		
-		
+
 		driver.quit();
-		
-		
-		
+
 	}
 
 }

@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class authenticationAlert {
 	
-	public static String url ="http://test:test@abcdatabase.com/basicauth";
+	public static String url ="http://test:test@abcdatabase.com/basicauth/";
 									//username:password@
 	public static void main(String[] args) {
 		

@@ -10,7 +10,7 @@ public class HW {
 	System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 		
 		WebDriver driver=new ChromeDriver();
-		driver.get("http://166.62.36.207/syntaxpractice/index.html");
+		driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
 		driver.findElement(By.cssSelector("a#btn_basic_example")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a [text() = 'Proceed Next'][1]")).click();
