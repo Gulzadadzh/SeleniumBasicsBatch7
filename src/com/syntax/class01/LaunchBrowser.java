@@ -7,7 +7,7 @@ public class LaunchBrowser {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/gulzadadzhusukeeva/eclipse-workspace/SeleniumBasicsBatch7/drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/gulzadadzhusukeeva/eclipse-workspace/SeleniumBasicsBatch7/drivers/chromedriver 10.46.21 AM");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://google.com");
