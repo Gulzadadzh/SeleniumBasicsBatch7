@@ -7,8 +7,8 @@ public class LaunchBrowser {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/gulzadadzhusukeeva/eclipse-workspace/SeleniumBasicsBatch7/drivers/chromedriver 10.46.21 AM");
-		
+		System.setProperty("webdriver.chrome.driver", "/Users/gulzadadzhusukeeva/eclipse-workspace/SeleniumBasicsBatch7/drivers/chromedriver");
+																														//drivers/chromedriver.exe   windows users
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://google.com");
 		
@@ -18,8 +18,10 @@ public class LaunchBrowser {
 		String title=driver.getTitle();
 		System.out.println(title);
 		
-		
-		
+		System.out.println("-------");
+		driver.get("http://amazon.com");
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
 	}
 }
 

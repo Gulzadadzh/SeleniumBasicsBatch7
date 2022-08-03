@@ -16,10 +16,10 @@ public class LocatingElements {
 	driver.findElement(By.name("pass")).sendKeys("123");
 	driver.findElement(By.name("login")).click();
 	Thread.sleep(3000);	
-	//driver.findElement(By.linkText("Forgot Password?")).click();
-	driver.findElement(By.partialLinkText("Forgot")).click();
-	Thread.sleep(2000);	
-	driver.quit();
+	driver.findElement(By.linkText("Forgot Password?")).click();
+	//driver.findElement(By.partialLinkText("Forgot")).click();
+	//Thread.sleep(2000);	
+	//driver.quit();
 	
 	
 	

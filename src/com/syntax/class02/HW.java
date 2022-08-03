@@ -26,7 +26,7 @@ public class HW {
 		Thread.sleep(3000);
 		driver.findElement(By.className("button")).click();
 		Thread.sleep(3000);
-		//driver.close();
+		driver.close();
 		
 		
 		
