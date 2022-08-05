@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class elementCommands {
 	
-	public static String url="http://166.62.36.207/syntaxpractice/basic-radiobutton-demo.html";
+	public static String url="http://syntaxprojects.com/basic-radiobutton-demo.php";
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -16,13 +16,18 @@ public class elementCommands {
 		WebDriver driver=new ChromeDriver();
 		driver.get(url);
 		String title=driver.getTitle();
+//Interface 
 		WebElement ageRadioBtn = driver.findElement(By.xpath("//input[@value = '0 - 5']"));
 		boolean isEnabled= ageRadioBtn.isEnabled();
 		boolean isDisplayed = ageRadioBtn.isDisplayed();
 		System.out.println(isEnabled);
 		System.out.println(isDisplayed);
 		
-		
+		System.out.println("Before clicking "+ageRadioBtn.isSelected());
+		ageRadioBtn.click();
+		Thread.sleep(2000);
+		System.out.println("After clicking "+ageRadioBtn.isSelected());
+
 		
 		
 	}

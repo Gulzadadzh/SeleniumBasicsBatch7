@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class checkBoxPractice {
 	
-	public static String url = "http://166.62.36.207/syntaxpractice/basic-checkbox-demo.html";
+	public static String url = "http://syntaxprojects.com/basic-checkbox-demo.php";
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
