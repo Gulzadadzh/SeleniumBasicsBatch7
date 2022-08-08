@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.Select;
 
 public class handlingDropDowns {
 
-	public static String url = "http:http://syntaxprojects.com/jquery-dropdown-search-demo.php";
+	public static String url = "http://syntaxprojects.com/jquery-dropdown-search-demo.php";
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-
+		
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 		WebElement daysDD = driver.findElement(By.id("select-demo"));
