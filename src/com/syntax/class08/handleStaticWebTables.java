@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class handleStaticWebTables {
 
 	
-	public static String url="http://syntaxtechs.com/selenium-practice/table-search-filter-demo.php";
+	public static String url="https://www.syntaxprojects.com/table-search-filter-demo.php";
 
 	public static void main(String[] args) {
 	
@@ -26,8 +26,20 @@ public class handleStaticWebTables {
 			WebElement row = it.next();
 			String rowText =row.getText();
 			System.out.println(rowText);
+		
 		}
 
+		System.out.println("----------------");
+		List<WebElement> colsData=driver.findElements(By.xpath("//table[@id = 'task-table']/thead/tr/th"));
+		System.out.println("Numbers of cols"+colsData.size());
+		for (WebElement col : colsData) {
+			String colText=col.getText();
+			System.out.println(colText);
+		}
+		
+		
+		
+		
 	}
 
 }
