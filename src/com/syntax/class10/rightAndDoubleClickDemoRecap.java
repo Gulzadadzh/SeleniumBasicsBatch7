@@ -7,10 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class rightAndDoubleClickDemo {
-
+public class rightAndDoubleClickDemoRecap {
 	public static void main(String[] args) throws InterruptedException {
-System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 		
 		WebDriver driver =new ChromeDriver();
 		driver.get("http://demo.guru99.com/test/simple_context_menu.html");
@@ -28,6 +27,12 @@ System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 		System.out.println(alert.getText());
 		alert.accept();
 		
+		
+		
+		
+		
+		
+		
+		
 	}
-
 }

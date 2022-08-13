@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class f {
+public class workingWithKeys {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
