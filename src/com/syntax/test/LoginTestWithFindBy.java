@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 //import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -25,11 +26,11 @@ public class LoginTestWithFindBy {
 
 		TakesScreenshot ts = (TakesScreenshot)BaseClass.driver;
 		File file = ts.getScreenshotAs(OutputType.FILE);
-		//try {
-		//	FileUtils.copyFile(file, new File("screenshots/HRMS/dashboard.png"));
-		//} //catch (IOException e) {
-			//e.printStackTrace();
-		//}
+		try {
+			FileUtils.copyFile(file, new File("screenshots/HRMS/dashboard.png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 
 		String adminText = dashboard.welcomeAdmin.getText();

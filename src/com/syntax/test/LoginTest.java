@@ -14,7 +14,7 @@ public class LoginTest {
 		loginPage.password.sendKeys("Hum@nhrm123");
 		loginPage.loginButton.click();
 		
-		BaseClass.tearDown();
+		BaseClass.tearDown();//snesti, razrushit
 
 	}
 

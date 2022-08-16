@@ -9,19 +9,16 @@ public class fileUploadDemo {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-		
-		WebDriver driver =new ChromeDriver();
+
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com");
-		WebElement fileUpload =driver.findElement(By.linkText("File Upload"));
+		WebElement fileUpload = driver.findElement(By.linkText("File Upload"));
 		fileUpload.click();
-		WebElement chooseFile=driver.findElement(By.id("file-upload"));
-		chooseFile.sendKeys("/Users/Syntax/Desktop/SampleTestData.xlsx");
+		WebElement chooseFile = driver.findElement(By.id("file-upload"));
+		chooseFile.sendKeys("/Users/gulzadadzhusukeeva/Desktop/Hello.docx");
 		WebElement uploadButton = driver.findElement(By.id("file-submit"));
 		uploadButton.click();
-		
-		
-		
+
 	}
-	
 
 }

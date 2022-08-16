@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class jsExecutorDemo {
 
-		public static String url = "http://18.232.148.34/humanresources/symfony/web/index.php/auth/login";
+		public static String url = "http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login";
 
 		public static void main(String[] args) throws InterruptedException {
 			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
@@ -25,7 +25,7 @@ public class jsExecutorDemo {
 			password.sendKeys("Hum@nhrm123");
 
 			JavascriptExecutor js = (JavascriptExecutor)driver;
-			js.executeScript("arguments[0].style.backgroundColor='blue'", password);
+			js.executeScript("arguments[0].style.backgroundColor='red'", password);
 
 			Thread.sleep(2000);
 

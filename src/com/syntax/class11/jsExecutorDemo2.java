@@ -22,7 +22,7 @@ public class jsExecutorDemo2 {
 			js.executeScript("window.scrollBy(0, -500)");
 			
 			Thread.sleep(2000);
-			WebElement backToTop = driver.findElement(By.xpath("//span[text() = 'Back to top']"));
+			WebElement backToTop = driver.findElement(By.xpath("//span[@class = 'navFooterBackToTopText']"));
 			js.executeScript("arguments[0].scrollIntoView(true);", backToTop);
 		}
 
