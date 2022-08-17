@@ -11,7 +11,7 @@ public class HW {
 		
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
-		driver.findElement(By.cssSelector("a#btn_basic_example")).click();
+		driver.findElement(By.cssSelector("input#btnLogin")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a [text() = 'Proceed Next'][1]")).click();
 		Thread.sleep(2000);

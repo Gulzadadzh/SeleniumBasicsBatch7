@@ -16,7 +16,7 @@ public class allLinksFromEbay {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
-		List<WebElement> allLinks = driver.findElements(By.tagName("link"));
+		List<WebElement> allLinks = driver.findElements(By.tagName("a"));
 		System.out.println(allLinks.size());
 		for (WebElement link : allLinks) {
 			String linkText = link.getText();
