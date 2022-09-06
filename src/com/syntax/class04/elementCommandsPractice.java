@@ -14,7 +14,7 @@ public class elementCommandsPractice {
 		
 		WebDriver driver=new ChromeDriver();
 		driver.get(url);
-		driver.manage().window().fullscreen();
+		//driver.manage().window().fullscreen();
 		
 		WebElement check=driver.findElement(By.xpath("//input[@value='Female']"));
 		check.click();

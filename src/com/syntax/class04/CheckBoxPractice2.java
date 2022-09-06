@@ -16,18 +16,16 @@ public class CheckBoxPractice2 {
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 		List<WebElement> optionCheckBoxes = driver.findElements(By.xpath("//input[@class = 'cb1-element']"));
-		int options = optionCheckBoxes.size();
-		System.out.println(options);
-		
-		for (WebElement check : optionCheckBoxes) {
-			if(check.isDisplayed()) {
-				String checks=check.getAttribute("value");
-				if(checks.equals("Option-2")) {
-					check.click();
+		for (WebElement checkBoxOption : optionCheckBoxes) {
+			if (checkBoxOption.isEnabled()) {
+				String checkBox = checkBoxOption.getAttribute("value");
+				if (checkBox.equals("Option-2")) {
+					checkBoxOption.click();
 					Thread.sleep(2000);
 					break;
 				}
 			}
 		}
+
 	}
 }
